@@ -1,22 +1,17 @@
-import { initializeApp } from
-  "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-import { getFirestore } from
-  "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
-
-import { getAuth } from
-  "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js";
-
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "YOUR_FIREBASE_API_KEY",
-  authDomain: "eldoranhb.firebaseapp.com",
-  projectId: "eldoranhb",
-  storageBucket: "eldoranhb.firebasestorage.app",
+  apiKey: "AIzaSyD0ElnwhLMlTeY424R6ghMsTPdZeuGi86Q",
+  authDomain: "eldorahnb.firebaseapp.com",
+  projectId: "eldorahnb",
+  storageBucket: "eldorahnb.firebasestorage.app",
   messagingSenderId: "417824810181",
-  appId: "1:417824810181:web:e1dbb0553763f340813cac"
+  appId: "1:417824810181:web:e1dbb0553763f340013cac"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-export const db = getFirestore(app);
-export const auth = getAuth(app);
